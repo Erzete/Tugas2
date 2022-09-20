@@ -1,0 +1,112 @@
+[
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":1,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Interstellar",
+            "rating": "4",
+            "release_date": "6 November 2014",
+            "review": "Interstellar memiliki skor audiens 86% dan skor tomatometer 73% di RottenTomatoes."
+        }
+},
+{
+        "model":"mywatchlist.mywatchlist",
+        "pk":2,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Big Hero 6",
+            "rating": "5",
+            "release_date": "7 November 2014",
+            "review": "Big Hero 6 memiliki skor audiens 91% dan skor tomatometer 90% di RottenTomatoes."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":3,
+        "fields":{
+            "watched":"Belum ditonton",
+            "title":"Avengers: Endgame",
+            "rating": "5",
+            "release_date": "24 April 2019",
+            "review": "Avengers: Endgame memiliki skor audiens 90% dan skor tomatometer 94% di RottenTomatoes."
+        }
+},
+{
+        "model":"mywatchlist.mywatchlist",
+        "pk":4,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Aquaman",
+            "rating": "4",
+            "release_date": "21 Desember 2018",
+            "review": "Aquaman memiliki skor audiens 73% dan skor tomatometer 65% di RottenTomatoes."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":5,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"The Boss Baby",
+            "rating": "3",
+            "release_date": "31 Maret 2017",
+            "review": "The Boss Baby memiliki skor audiens 51% dan skor tomatometer 53% di RottenTomatoes."
+        }
+},
+{
+        "model":"mywatchlist.mywatchlist",
+        "pk":6,
+        "fields":{
+            "watched":"Belum ditonton",
+            "title":"Hacksaw Ridge",
+            "rating": "5",
+            "release_date": "4 November 2016",
+            "review": "Hacksaw Ridge memiliki skor audiens 91% dan skor tomatometer 84% di RottenTomatoes."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":7,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Kong: Skull Island",
+            "rating": "4",
+            "release_date": "8 Maret 2017",
+            "review": "Kong: Skull Island memiliki skor audiens 69% dan skor tomatometer 75% di RottenTomatoes."
+        }
+},
+{
+        "model":"mywatchlist.mywatchlist",
+        "pk":8,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Dawn of the Planet of the Apes",
+            "rating": "5",
+            "release_date": "9 Juli 2014",
+            "review": "Dawn of the Planet of the Apes memiliki skor audiens 88% dan skor tomatometer 91% di RottenTomatoes."
+        }
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":9,
+        "fields":{
+            "watched":"Sudah ditonton",
+            "title":"Ip Man",
+            "rating": "5",
+            "release_date": "12 Desember 2008",
+            "review": "Ip Man memiliki skor audiens 93% dan skor tomatometer 86% di RottenTomatoes."
+        }
+},
+{
+        "model":"mywatchlist.mywatchlist",
+        "pk":10,
+        "fields":{
+            "watched":"Belum ditonton",
+            "title":"Elvis",
+            "rating": "5",
+            "release_date": "24 Juni 2022",
+            "review": "Elvis memiliki skor audiens 94% dan skor tomatometer 78% di RottenTomatoes."
+        }
+    }
+]
