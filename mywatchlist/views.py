@@ -17,7 +17,3 @@ def show_json(request):
 	data = MyWatchlist.objects.all()
 	return HttpResponse(serializers.serialize("json", data), content_type="application/json")
 
-def show_html(request):
-	data = MyWatchlist.objects.all()
-	context = {'list_watchlist': data}
-	return render(request, "mywatchlist.html", context)
