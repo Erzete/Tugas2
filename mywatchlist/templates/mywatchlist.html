@@ -1,25 +1,26 @@
 {% extends 'base.html' %}
 
-{% block content %}
+ {% block content %}
 
-<table>
+  <h1>Tugas 3 Assignment PBP/PBD</h1>
+  <table>
     <tr>
-    <th>Watched?</th>
-    <th>Nama Film</th>
-    <th>Rating</th>
-    <th>Tanggal Rilis</th>
-    <th>Review</th>
+      <th>Watch Status</th>
+      <th>Nama Film</th>
+      <th>Rating</th>
+      <th>Tanggal Rilis</th>
+      <th>Review</th>
     </tr>
     {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
     {% for film in list_watchlist %}
     <tr>
-        <th>{{film.watched}}</th>
-        <th>{{film.title}}</th>
-        <th>{{film.rating}}</th>
-        <th>{{film.release_date}}</th>
-        <th>{{film.review}}</th>
+      <th>{{film.watched}}</th>
+      <th>{{film.title}}</th>
+      <th>{{film.rating}}</th>
+      <th>{{film.release_date}}</th>
+      <th>{{film.review}}</th>
     </tr>
     {% endfor %}
-</table>
+  </table>
 
 {% endblock content %}
