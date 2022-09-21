@@ -1,5 +1,6 @@
 Link : https://tugas2-rt.herokuapp.com/katalog/
 
+#Tugas 1
 1. https://ibb.co/X5SmKD6
 2. Kita tetap bisa membuat aplikasi web berbasis Django tanpa menggunakan virtual environment tetapi tentunya akan lebih baik menggunakan Virtual environment
    Hal ini dikarenakan kita membutuhkan semacam sekat/batasan untuk setiap proyek Django, sehingga satu proyek dengan proyek lainnya tidak akan terganggu. Hal
