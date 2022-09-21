@@ -1,8 +1,18 @@
 {% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="e">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Watchlist</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
 
  {% block content %}
 
   <h1>Tugas 3 Assignment PBP/PBD</h1>
+  
   <table>
     <tr>
       <th>Watch Status</th>
@@ -11,7 +21,6 @@
       <th>Tanggal Rilis</th>
       <th>Review</th>
     </tr>
-    {% comment %} Tambahkan data di bawah baris ini {% endcomment %}
     {% for film in list_watchlist %}
     <tr>
       <th>{{film.watched}}</th>
