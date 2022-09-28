@@ -14,7 +14,7 @@ from todolist.forms import TaskForm
 # Create your views here.
 @login_required(login_url='/todolist/login/')
 def show_todolist(request):
-    data_task = Task.objects.all()
+    data_task = Task.objects.filter(user = request.user)
     context = {'list_task': data_task, 'user_login': request.user}
     return render(request, "todolist.html", context)
 
