@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="e">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+
+ {% block content %}
+
+  <h1>Tugas 4 Assignment PBP/PBD</h1>
+  <h3> Halo, {{ user_login }}! </h3>
+  <table>
+    <tr>
+      <th>Tanggal</th>
+      <th>User</th>
+      <th>Judul Task</th>
+      <th>Deskripsi</th>
+    </tr>
+    {% for task in list_task %}
+    <tr>
+      <th>{{task.date}}</th>
+      <th>{{task.user}}</th>
+      <th>{{task.title}}</th>
+      <th>{{task.description}}</th>
+    </tr>
+    {% endfor %}
+  </table>
+
+
+
+  <button><a href="{% url 'todolist:add_task' %}">Tambah Task Baru</a></button>
+
+  <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+
+{% endblock content %}
