@@ -1,6 +1,6 @@
 # Jawaban Tugas
 
-## Tugas 1
+## Tugas 2
 Link : https://tugas2-rt.herokuapp.com/katalog/
 
 1. https://ibb.co/X5SmKD6
@@ -13,7 +13,7 @@ Link : https://tugas2-rt.herokuapp.com/katalog/
    Ketika deployment-nya saya mengalami  beberapa isu karena ketidakmen gertian saya terhadap Heroku. Akan tetapi, akhirnya saya bisa menemukan yang mana yang salah 
    sehingga saya bisa men-deploy project django ini ke Heroku.
    
-## Tugas 2
+## Tugas 3
 Link : https://tugas3-rt.herokuapp.com/mywatchlist/html/, https://tugas3-rt.herokuapp.com/mywatchlist/xml/, https://tugas3-rt.herokuapp.com/mywatchlist/json/
 
 Postman : https://imgur.com/a/FLAKjR0
@@ -27,7 +27,14 @@ Postman : https://imgur.com/a/FLAKjR0
    > python manage.py startapp mywatchlist
    
    Kemudian saya melakukannya seperti hal yang ada pada Lab 1 dan 2 bedanya di folder mywatchlist models.py saya isi dengan atribut yang ada pada soal. Kemudian saya      juga membuat initial_mywatchlist_data.json yang isinya 10 film beserta atributnya sesuai dengan yang ada pada models.py jangan lupa sama seperti lab 2 kita akan        menampilkan xml dan json-nya. Kemudian pada test.py saya mencoba untuk mengakses ketiga function yang ada pada views.py, semuanya udah OK. 
-   
+  
+## Tugas 4
+
+1. Kegunaan dari csrf_token sesuai namanya adalah sebagai proteksi website terhadapt Cross Site Request Forgeries. Jika pada laman terdapat kelemahan seperti yang        telah disebutkan maka suatu user bisa saja menjalankan hal yang mereka sebenarnya tidak inginkan terjadi seperti menghapus akun user ataupun hanya sekedar me-logout    user dari akunnya.
+2. Ya tentu saja bisa, kita tinggal membuatnya dengan <form></form> isi body form tersebut terdiri dari label (untuk menunjukkan apa yang perlu diisikan user) dan        input beserta tipe input yang kita inginkan dari user.
+3. Setelah kita mengisi form yang terdapat pada html, isian tersebut akan disimpan oleh database yang berisi objek-objek yang dimiliki oleh Task. Nah, ketika kita        ingin memunculkannya kita tinggal me-request data tersebut menggunakan show_todolist, objek Task akan difilter sesuai dengan user yang sedang logged in kemudian        akan dimunculkan dengan render
+4. Untuk register, login, logout kurang lebih sama dengan yang ada di tutorial3, namun untuk show_todolist kita tidak akan memunculkan semua objek Task melainkan          difilter berdasarkan user yang sedang login. Kemudian saya tambahkan function add_task pada views yang berguna untuk menambah objek Task, function ini akan            bekerjasama form.html dan juga forms.py untuk menyimpan data tersebut. Jangan lupa tambahkan button tambah task baru yang akan meng-redirect user ke halaman yang      berisi form.html
+
 Mungkin itu saja, terima kasih telah membaca README ini
 Salam,
 Rama Tridigdaya
