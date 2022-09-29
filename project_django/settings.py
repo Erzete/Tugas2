@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 import os
 import dj_database_url
+import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -143,7 +144,4 @@ for directory in [*STATICFILES_DIRS, STATIC_ROOT]:
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-if 'DATABASE_URL' in os.environ:
-    import dj_database_url
-    DATABASES = {'default': dj_database_url.config()}
+django_heroku.settings(locals())
