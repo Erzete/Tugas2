@@ -45,6 +45,19 @@ Link : https://tugas4-rt.herokuapp.com/todolist/ (Error di Heroku saat login, ja
 3. (Gak ada yang saya ketahui, jawaban ini diambil dari google) ID selector (#..), akan mengubah style semua tag yang memiliki id ini. Element selector, akan mengubah style semua element yang memiliki tag tersebut (contoh, table, a, dan lainnya. Class selector, akan mengubah style semua element yang memiliki Class tersebut (class=".."). Universal selector (*), berlaku ke seluruh tag.
 4. Saya mulai dari todolist.html, menambahkan line untuk load bootstrap-nya terlebih dahulu kemudian saya mengubah task yang tadinya direpresentasikan sebagai tabel      diubah menjadi card. Kemudian karena masih belum rapi saya ke tengahkan card tersebut menggunakan row jangan lupa tambahin md dan mt biar tidak ada card yang nempel    satu dengan lainnya. Terakhir button-nya juga saya ubah button menjadi ke tengah dan diberikan warna. Selanjutnya dibagian register di sini masih ada yang kurang      saya tidak tahu kenapa tapi tidak bisa ditunjukkan message-nya padahal di login muncul. Untuk ketiga login, register, dan form mirip yaitu tinggal membuat form        group, untuk name serta id pada tag tersebut saya mengambil dengan meng-inspect element html yang terdapat pada tugas 4 lalu tinggal diganti-ganti saja sesuai          dengan format bootstrap. Untuk deskripsi pada form menggunakan textarea.
 
+## Tugas 6 (Late)
+1. Asinkronus : Pengguna tidak harus me-refresh laman untuk mendapatkan data terbarunya, masih bisa berinteraksi dengan web tersebut selama data di-load
+   Sinkronus : Untuk mendapatkan data terbaru, laman harus di-refresh oleh user.
+2. Event-driven-programming adalah paradigma programming yang berfokus pada event dan alur jalan programnya ditentukan oleh event yang dibuat oleh user. User didorong    untuk berinteraksi dengan web/aplikasi tersebut untuk membuat event2 tersebut. Contohnya pada tugas ini adalah Tombol "Submit Task" yang akan menjalankan              addTodolist
+   ketika ditekan.
+3. AJAX akan membuat halaman web memperbarui datanya secara asinkronus dengan mengirimkan data ke server di balik layar, AJAX menggunakan browser untuk meminta data      dari web server dan JavaScript, menggunakan XML/JSON untuk mengirim data, serta HTML DOM untuk menampilkan data. 
+4. Untuk GET, saya menggunakan getJSON untuk mengambil json yang ada di todolist/show_json, kemudian saya akan me-loop setiap data yang ada pada json tersebut untuk
+   membuat Card yang sesuai dengan format pada tugas sebelumnya dan nanti hasilnya akan ditampilkan pada laman. Untuk POST, saya membuat fungsi add pada views.py yang
+   isinya kurang lebih sama dengan fungsi add_task yang telah dibuat sebelumnya kemudian saya membuat url baru bernama todolist/add, todolist/add ini nantinya akan
+   digunakan pada script di todolist.html. Kemudian di bagian script pada todolist.html akan dibuat 3 fungsi yaitu getTodolist, refreshTodolist, dan addTodolist. 
+   getTodolist akan mengambil data dari show_json, refreshTodolist akan me-refresh todolist secara asinkronus, dan addTodolist akan digunakan untuk menambahkan
+   data pada todolist. addTodolist akan berjalankan ketika kita memencet tombol Submit Task pada modal Add Task, setelah dipencet maka akan menjalankan                    refreshTodolist.
+   
 Mungkin itu saja, terima kasih telah membaca README ini
 Salam,
 Rama Tridigdaya
